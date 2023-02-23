@@ -1,0 +1,50 @@
+[
+        {
+            "type": "Programming:",
+            "data": "Java / J2EE, Python, Go, C, HTML, CSS, JQuery, JavaScript, AJAX"
+        },
+        {
+            "type": "Ecommerce Technology:",
+            "data": "SAP Commerce Cloud"
+        },
+        {
+            "type": "Web Technologies:",
+            "data": "REST API, Web Services, Microservices"
+        },
+        {
+            "type": "Frameworks:",
+            "data": "Spring MVC"
+        },
+        {
+            "type": "Database Technologies:",
+            "data": "Oracle, MySQL, JDBC"
+        },
+        {
+            "type": "Analysis Tools:",
+            "data": "Dynatrace, MS Excel"
+        },
+        {
+            "type": "Software Development Models:",
+            "data": "Waterfall, Agile-SCRUM"
+        },
+        {
+            "type": "Build Tools:",
+            "data": "Ant, Jenkins, SAP Commerce Cloud Deployment"
+        },
+        {
+            "type": "Tools:",
+            "data": "Microsoft Office, MS Visio, Kibana, Eclipse, Intellij, Postman, Putty, Kount, Log4j, Jira, Confluence"
+        },
+        {
+            "type": "Source Control:",
+            "data": "Git, Bitbucket, Github"
+        },
+        {
+            "type": "Operating Systems:",
+            "data": "Windows, Ubuntu, macOS"
+        },
+        {
+            "type": "Others",
+            "data": "Strong Oral and Written Communication, Team Player, Leadership and Ownership Skills"
+        }
+    ]

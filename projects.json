@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Thread Safe Hashing",
+        "description": "Open Hashing implementation using multiple Go routines",
+        "repo": "https://github.com/NA0724/Thread_Safe_Hashing"
+    },
+    {
+        "title": "Deadlock Detection",
+        "description": "Implemented Banker's Algorithm for detecting deadlocks and process granting of additional process requests using Go",
+        "repo": "https://github.com/NA0724/DeadlockDetection"
+    },
+    {
+        "title": "Stock Price prediction using Long Term Short Memory",
+        "description": "",
+        "repo": "https://github.com/NA0724/StockPricePrediction_LSTM"
+    }
+]

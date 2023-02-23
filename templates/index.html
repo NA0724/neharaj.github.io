@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Profile</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Profile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <img src="/static/images/profile.jpeg" alt="Profile Picture" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+                <div class="profile-info" id="profile">
+                    <h1>{{ name }}</h1>
+                    <h3>{{ position }} at <a href="https://www.scu.edu">Santa Clara University</a></h3>
+                    <p><a href="{{ website }}">{{ website}}</a></p>
+                    <p><a href="{{ linkedin }}"><img src="/static/images/linkedin.jpeg" alt="Home" style="width: 100px; height: 30px;"></a>
+                    <a href="{{ github }}"><img src="/static/images/Github-logo.jpeg" alt="Home" style="width: 100px; height: 40px;"></a></p>
+                </div>
+                <hr>
+                <h4>About Me</h4>
+                <p>6+ years of professional experience in application development, big time foodie, loves to dance, beginner in Go! Welcome to my website!</p>
+                <hr>
+                <h4>Skills</h4>
+                 <ul>
+                            {% for s in skills %}
+                            <li><strong>{{ s.type }}</strong> - {{ s.data }} </li>
+                            {% endfor %}
+                        </ul>
+                <hr>
+                <h4>Projects</h4>
+                 <ul>
+                            {% for p in projects %}
+                            <li><strong><a href="{{ p.repo }}">{{ p.title }}</a></strong> - {{ p.description }} </li>
+                            {% endfor %}
+                        </ul>
+                <hr>
+                <div class="col-md-12">
+                    <div class="education">
+                        <h2>Education</h2>
+                        <ul>
+                            {% for s in school %}
+                            <li><strong>{{ s.name }}</strong>, {{ s.dept }} ({{ s.year }}) {{ s.gpa }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="experience">
+                        <h3>Professional Experience</h3>
+                        <ul>
+                            {% for job in experience %}
+                            <li><strong>{{ job.title }}</strong>, {{ job.company }} ({{ job.year }})</li>
+                            {% endfor %}
+                        </ul>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
